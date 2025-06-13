@@ -1,24 +1,45 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Header() {
   return (
-    <div className="flex justify-around items-center bg-gray-800 text-white p-4  ">
-      <div className="ml-4">
-        <Image src="/logo.png" alt="Logo" width={30} height={30} />
+    <header className="flex fixed w-full justify-around items-center bg-black/60 text-white p-4 backdrop-blur-md z-99999">
+      <div>
+        <Link href="/">
+          <Image
+            src="/logo.png"
+            alt="Logo"
+            width={30}
+            height={30}
+            className="cursor-pointer"
+          />
+        </Link>
       </div>
-      <div className="flex space-x-10 ">
-        <div>
-          <a href="/">Home</a>
-        </div>
-        <div>
-          <a href="/sobre">Sobre</a>
-        </div>
-        <div>Serviços</div>
-        <div>Portfólio</div>
-      </div>
-      <button className="flex space-x-4 rounded-2xl bg-amber-300 p-2 mr-4 cursor-pointer">
-        Contato
-      </button>
-    </div>
+      <nav className="flex space-x-10">
+        <Link href="/" className="hover:text-[#5454D4] transition-colors">
+          Home
+        </Link>
+        <Link href="/sobre" className="hover:text-[#5454D4] transition-colors">
+          Sobre
+        </Link>
+        <Link
+          href="/servicos"
+          className="hover:text-[#5454D4] transition-colors"
+        >
+          Serviços
+        </Link>
+        <Link
+          href="/projetos"
+          className="hover:text-[#5454D4] transition-colors"
+        >
+          Projetos
+        </Link>
+      </nav>
+      <Link href="/contato">
+        <button className="rounded-[8px] border border-[#5454D4] p-2 px-8 cursor-pointer hover:bg-[#5454D4] transition-colors">
+          Contato
+        </button>
+      </Link>
+    </header>
   );
 }

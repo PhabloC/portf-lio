@@ -28,9 +28,11 @@ export default function Footer() {
                   Phablo Carvalho
                 </h3>
                 <p className="text-gray-300 mb-6 leading-relaxed max-w-md">
-                  Desenvolvedor Full Stack apaixonado por criar experiências
-                  digitais excepcionais. Sempre em busca de novos desafios e
-                  oportunidades para crescer profissionalmente.
+                  Desenvolvedor Front-end altamente dedicado, especializado em
+                  criar interfaces digitais intuitivas e de alto desempenho.
+                  Comprometido com a excelência técnica e em constante busca por
+                  novos desafios para aprimorar habilidades e impulsionar o
+                  crescimento profissional.
                 </p>
                 <div className="flex space-x-4">
                   {[
