@@ -1,0 +1,132 @@
+.projects-slider-container {
+  width: 100%;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.projects-swiper {
+  padding-bottom: 40px;
+}
+
+.project-card {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 2px 16px 0 #0002;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  border: none;
+  position: relative;
+  overflow: hidden;
+  min-height: 500px;
+}
+
+.project-card > * {
+  position: relative;
+  z-index: 1;
+}
+
+.project-img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 18px 18px 0 0;
+  margin-bottom: 0;
+}
+
+.project-content {
+  padding: 24px 18px 18px 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 1;
+}
+
+.project-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 6px;
+  color: #18181b;
+}
+
+.project-desc {
+  font-size: 1rem;
+  color: #4b5563;
+  margin-bottom: 12px;
+  text-align: left;
+}
+
+.project-techs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.tech-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f3f4f6;
+  border-radius: 6px;
+  padding: 4px 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #18181b;
+  gap: 6px;
+}
+
+.project-buttons {
+  display: flex;
+  gap: 12px;
+  width: 100%;
+}
+
+.btn-site,
+.btn-github {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 10px 0;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: background 0.2s, color 0.2s;
+}
+
+.btn-site {
+  background: #2563eb;
+  color: #fff;
+  border: none;
+}
+
+.btn-github {
+  background: #fff;
+  border: 2px solid #d1d5db;
+  color: #18181b;
+}
+
+.btn-site:hover {
+  background: #1d4ed8;
+}
+
+.btn-github:hover {
+  background: #f3f4f6;
+}
+
+.swiper-pagination-bullets {
+  bottom: 0 !important;
+}
+
+.swiper-pagination-bullet {
+  background: #2563eb;
+  opacity: 0.4;
+}
+
+.swiper-pagination-bullet-active {
+  background: #2563eb;
+  opacity: 1;
+}

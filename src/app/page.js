@@ -1,3 +1,4 @@
+import Projects from "@/components/MyProjects/Projects";
 import PrimarySection from "@/components/PrimarySection/PrimarySection";
 import SecondSection from "@/components/SecondSection/SecondSection";
 
@@ -6,6 +7,7 @@ export default function Home() {
     <div className=" bg-gradient-to-br from-gray-900 via-black to-gray-900">
       <PrimarySection />
       <SecondSection />
+      <Projects />
     </div>
   );
 }
