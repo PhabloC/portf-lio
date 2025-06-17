@@ -52,12 +52,12 @@ export default function PrimarySection() {
 
   return (
     <>
-      <div className="flex items-center justify-center w-full h-screen">
+      <div className="flex  items-center justify-center w-full h-screen">
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-0 left-1/20 w-96 h-96 bg-blue-500 rounded-full blur-3xl"></div>
           <div className="absolute bottom-0 right-1/20 w-96 h-96 bg-purple-500 rounded-full blur-3xl"></div>
         </div>
-        <div className="flex flex-col items-start w-[600px] z-1 gap-2">
+        <div className="flex  flex-col items-start w-[600px] z-50 ">
           <h3 className="text-6xl font-bold">Hi,</h3>
           <h1 className="text-6xl font-bold">Eu sou o Phablo Carvalho</h1>
           <p className="text-2xl">Desenvolvedor Front-End</p>
@@ -68,6 +68,12 @@ export default function PrimarySection() {
             Contato
           </button>
         </div>
+        {/* <div className="flex w-full h-full relative justify-center">
+          <spline-viewer
+            url="https://prod.spline.design/zUI-aqFpGmjubDDC/scene.splinecode"
+            className="spline-background"
+          ></spline-viewer>
+        </div> */}
         <div className="flex w-[600px] h-[400px] relative justify-center">
           <div className="absolute left-10" ref={floatRefs[0]}>
             <Image src="/imagens/onda.png" alt="Line" width={70} height={70} />

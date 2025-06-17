@@ -130,3 +130,38 @@
   background: #2563eb;
   opacity: 1;
 }
+
+/* Ensure navigation buttons are always visible and styled */
+.swiper-button-prev,
+.swiper-button-next {
+  color: #2563eb;
+  background: #fff;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  transition: opacity 0.3s ease;
+  z-index: 10;
+}
+
+/* Center arrows vertically */
+.swiper-button-prev {
+  left: 50px;
+}
+
+.swiper-button-next {
+  right: 50px;
+}
+
+/* Ensure arrows are visible even when looping */
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Optional: Add hover effect for arrows */
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  background: #f3f4f6;
+}
