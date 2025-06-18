@@ -44,7 +44,7 @@ export default function SkillsSection() {
       </div>
       <div className="max-w-4xl mx-auto">
         <h2
-          className={`text-3xl md:text-4xl font-bold text-center mb-12 text-white transition-all duration-1000 ${
+          className={`text-3xl md:text-5xl font-bold text-center mb-12 text-white transition-all duration-1000 ${
             isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
           }`}
         >

@@ -117,21 +117,6 @@
   background: #f3f4f6;
 }
 
-.swiper-pagination-bullets {
-  bottom: 0 !important;
-}
-
-.swiper-pagination-bullet {
-  background: #2563eb;
-  opacity: 0.4;
-}
-
-.swiper-pagination-bullet-active {
-  background: #2563eb;
-  opacity: 1;
-}
-
-/* Ensure navigation buttons are always visible and styled */
 .swiper-button-prev,
 .swiper-button-next {
   color: #2563eb;
@@ -144,7 +129,6 @@
   z-index: 10;
 }
 
-/* Center arrows vertically */
 .swiper-button-prev {
   left: 50px;
 }
@@ -153,14 +137,12 @@
   right: 50px;
 }
 
-/* Ensure arrows are visible even when looping */
 .swiper-button-prev::after,
 .swiper-button-next::after {
   font-size: 16px;
   font-weight: bold;
 }
 
-/* Optional: Add hover effect for arrows */
 .swiper-button-prev:hover,
 .swiper-button-next:hover {
   background: #f3f4f6;

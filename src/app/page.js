@@ -1,9 +1,8 @@
 import ProjectsSection from "@/components/AllProjects/AllProjects";
 import Experience from "@/components/Experience/Experience";
-
-import PrimarySection from "@/components/PrimarySection/PrimarySection";
 import SecondSection from "@/components/SecondSection/SecondSection";
 import Skills from "@/components/Skills/Skills";
+import PrimarySection from "@/components/PrimarySection/PrimarySection";
 
 export default function Home() {
   return (

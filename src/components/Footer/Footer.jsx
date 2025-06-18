@@ -1,14 +1,17 @@
-import {
-  Github,
-  Linkedin,
-  Mail,
-  Phone,
-  MapPin,
-  Heart,
-  ArrowUp,
-} from "lucide-react";
+"use client"; // Adicione esta linha no topo do arquivo
+
+import { Github, Linkedin, Mail, Phone, MapPin, ArrowUp } from "lucide-react";
+
+import Image from "next/image";
 
 export default function Footer() {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <footer className="bg-gradient-to-br from-gray-900 via-black to-gray-900 text-white relative overflow-hidden">
       {/* Background Elementos */}
@@ -24,9 +27,16 @@ export default function Footer() {
             <div className="grid md:grid-cols-4 gap-8">
               {/* Sobre */}
               <div className="md:col-span-2">
-                <h3 className="text-3xl font-bold mb-6 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
+                <Image
+                  src="/logo/logo-name.png"
+                  alt="Phablo Carvalho"
+                  width={100}
+                  height={100}
+                  className="mb-4"
+                />
+                {/*  <h3 className="text-3xl font-bold mb-6 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
                   Phablo Carvalho
-                </h3>
+                </h3> */}
                 <p className="text-gray-300 mb-6 leading-relaxed max-w-md">
                   Desenvolvedor Front-end altamente dedicado, especializado em
                   criar interfaces digitais intuitivas e de alto desempenho.
@@ -121,8 +131,9 @@ export default function Footer() {
               </div>
 
               <button
+                onClick={scrollToTop}
                 className="w-10 h-10 rounded-full bg-gradient-to-r from-blue-500 to-purple-600 flex items-center justify-center
-               hover:from-blue-600 hover:to-purple-700 transition-all duration-300 hover:scale-110 shadow-lg cursor-pointer"
+                hover:from-blue-600 hover:to-purple-700 transition-all duration-300 hover:scale-110 shadow-lg cursor-pointer"
                 aria-label="Voltar ao topo"
               >
                 <ArrowUp className="w-5 h-5" />

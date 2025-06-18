@@ -48,8 +48,8 @@ const projects = [
     description: "Site para servidor de Ragnarok Online com tema de Naruto.",
     tech: ["react", "javascript", "vite", "tailwind"],
     image: "/imagens/nsro.png",
-    github: "https://github.com/seuusuario/nsro",
-    demo: "https://nsro.com",
+    github: "https://github.com/PhabloC/nsro",
+    demo: "https://nsro-amber.vercel.app/",
   },
   {
     id: 3,
@@ -137,10 +137,6 @@ export default function ProjectsSection() {
               modifier: 1,
               slideShadows: true,
             }}
-            pagination={{
-              clickable: true,
-              dynamicBullets: true,
-            }}
             navigation={true}
             autoplay={{
               delay: 4000,
@@ -166,7 +162,7 @@ export default function ProjectsSection() {
           >
             {projects.map((project, index) => (
               <SwiperSlide key={project.id}>
-                <div className="bg-white/10 backdrop-blur-lg rounded-3xl p-6 border border-white/20 hover:border-white/40 transition-all duration-300 h-full">
+                <div className="bg-white/10 backdrop-blur-lg rounded-3xl p-6 mb-10 mt-10 border border-white/20 hover:border-white/40 transition-all duration-300 h-full">
                   {/* Project Image */}
                   <div className="relative mb-6 rounded-2xl overflow-hidden group">
                     <img
