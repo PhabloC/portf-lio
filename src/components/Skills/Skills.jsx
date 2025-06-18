@@ -33,11 +33,7 @@ export default function SkillsSection() {
   }, []);
 
   return (
-    <section
-      ref={sectionRef}
-      id="skills"
-      className="min-h-screen py-16 px-4 bg-gradient-to-br from-gray-900 via-black to-gray-900"
-    >
+    <section ref={sectionRef} id="skills" className="min-h-screen py-16 px-4 ">
       <div className="absolute inset-0 opacity-10 pointer-events-none">
         <div className="absolute bottom-0 right-1/4 w-80 h-80 bg-purple-500 rounded-full blur-3xl"></div>
         <div className="absolute top-0 left-1/4 w-80 h-80 bg-blue-500 rounded-full blur-3xl"></div>

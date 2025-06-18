@@ -41,11 +41,7 @@ export default function ExperienceSection() {
   }, []);
 
   return (
-    <section
-      ref={sectionRef}
-      id="experience"
-      className="py-20 px-4 bg-gradient-to-br from-gray-900 via-black to-gray-900"
-    >
+    <section ref={sectionRef} id="experiencia" className="py-20 px-4 ">
       <div className="max-w-6xl mx-auto">
         <h2
           className={`text-4xl md:text-5xl font-bold text-center mb-16 text-white transition-all duration-1000 ${

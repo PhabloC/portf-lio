@@ -13,7 +13,7 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-gradient-to-br from-gray-900 via-black to-gray-900 text-white relative overflow-hidden">
+    <footer className="bg-gradient-to-br from-gray-900 via-black to-gray-900   text-white relative overflow-hidden">
       {/* Background Elementos */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-0 left-1/4 w-96 h-96 bg-blue-500 rounded-full blur-3xl"></div>
@@ -83,18 +83,20 @@ export default function Footer() {
                   Links Rápidos
                 </h4>
                 <ul className="space-y-3">
-                  {["Sobre", "Habilidades", "Experiência", "Projetos"].map(
-                    (link) => (
-                      <li key={link}>
-                        <a
-                          href={`#${link.toLowerCase()}`}
-                          className="text-gray-400 hover:text-white transition-colors duration-200 hover:translate-x-1 transform inline-block"
-                        >
-                          {link}
-                        </a>
-                      </li>
-                    )
-                  )}
+                  {[
+                    { label: "Experiência", id: "experiencia" },
+                    { label: "Skills", id: "skills" },
+                    { label: "Projetos", id: "projects" },
+                  ].map(({ label, id }) => (
+                    <li key={label}>
+                      <a
+                        href={`#${id}`}
+                        className="text-gray-400 hover:text-cyan-400 transition-colors duration-200 hover:translate-x-1 transform inline-block"
+                      >
+                        {label}
+                      </a>
+                    </li>
+                  ))}
                 </ul>
               </div>
 

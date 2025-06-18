@@ -117,8 +117,7 @@ export default function PrimarySection() {
   }, []);
 
   return (
-    <div className="relative justify-center items-center flex w-full h-screen overflow-hidden">
-      <AnimatedBackground />
+    <div className="bg-gradient-to-br from-gray-900 via-black to-gray-900 relative justify-center items-center flex w-full h-screen overflow-hidden">
       <spline-viewer url="https://prod.spline.design/JuN5vdtjWeqRzaPN/scene.splinecode"></spline-viewer>
 
       <div className="h-full flex flex-col items-center justify-center px-6 absolute z-10">

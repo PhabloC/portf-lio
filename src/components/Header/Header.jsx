@@ -8,20 +8,20 @@ export default function Header() {
        bg-[#5454D4]/30 shadow-lg text-white p-4 backdrop-blur-md z-999999"
       >
         <nav className="flex space-x-10">
-          <Link href="/" className="hover:text-cyan-400 transition-colors">
-            Home
-          </Link>
-          <Link href="/sobre" className="hover:text-cyan-400 transition-colors">
-            Sobre
-          </Link>
           <Link
-            href="/servicos"
+            href="#experiencia"
             className="hover:text-cyan-400 transition-colors"
           >
-            Serviços
+            Experiência
           </Link>
           <Link
-            href="/projetos"
+            href="#skills"
+            className="hover:text-cyan-400 transition-colors"
+          >
+            Skills
+          </Link>
+          <Link
+            href="#projects"
             className="hover:text-cyan-400 transition-colors"
           >
             Projetos
