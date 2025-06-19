@@ -13,6 +13,11 @@ const skills = [
   { name: "Node.js", level: 87, image: "/logo/node.png" },
   { name: "TypeScript", level: 89, image: "/logo/typescript.jpg" },
   { name: "Wordpress", level: 95, image: "/logo/wordpress.png" },
+  { name: "Next.js", level: 90, image: "/logo/next.png" },
+  { name: "Git", level: 85, image: "/logo/git.png" },
+  { name: "Firebase", level: 80, image: "/logo/firebase.png" },
+  { name: "Vite", level: 80, image: "/logo/vite.png" },
+  { name: "Bubble.io", level: 75, image: "/logo/bubble.jpg" },
 ];
 
 export default function SkillsSection() {

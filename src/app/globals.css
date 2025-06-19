@@ -43,7 +43,7 @@ html {
 }
 
 /* Custom Scrollbar */
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
   width: 8px;
 }
 
@@ -58,7 +58,7 @@ html {
 
 ::-webkit-scrollbar-thumb:hover {
   background: linear-gradient(180deg, #0891b2, #7c3aed);
-}
+} */
 
 /* Glow Effects */
 .glow-cyan {

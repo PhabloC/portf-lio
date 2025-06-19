@@ -1,4 +1,4 @@
-"use client"; // Adicione esta linha no topo do arquivo
+"use client";
 
 import { Github, Linkedin, Mail, Phone, MapPin, ArrowUp } from "lucide-react";
 
@@ -84,6 +84,7 @@ export default function Footer() {
                 </h4>
                 <ul className="space-y-3">
                   {[
+                    { label: "Sobre Mim", id: "sobre" },
                     { label: "Experiência", id: "experiencia" },
                     { label: "Skills", id: "skills" },
                     { label: "Projetos", id: "projects" },
@@ -116,7 +117,7 @@ export default function Footer() {
                   </div>
                   <div className="flex items-center text-gray-400">
                     <MapPin className="w-5 h-5 mr-3 text-red-400" />
-                    <span>Juiz de Fora, MG</span>
+                    <span>Juiz de Fora - MG</span>
                   </div>
                 </div>
               </div>
