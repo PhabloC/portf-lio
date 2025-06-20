@@ -150,12 +150,19 @@ export default function PrimarySection() {
               especializado.
             </p>
 
-            <button
-              className="px-8 py-3 rounded-lg bg-white text-gray-900 font-medium shadow-lg hover:bg-gray-200 transition-all duration-300 hover:scale-105"
-              style={{ transitionDelay: "300ms" }}
+            <a
+              href="https://www.linkedin.com/in/phablo--carvalho"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              Entre em contato
-            </button>
+              <button
+                className="px-8 py-3 rounded-lg bg-white text-gray-900 font-medium shadow-lg
+                 hover:bg-gray-200 transition-all duration-300 hover:scale-105 cursor-pointer"
+                style={{ transitionDelay: "300ms" }}
+              >
+                Entre em contato
+              </button>
+            </a>
           </div>
         </div>
       </div>
