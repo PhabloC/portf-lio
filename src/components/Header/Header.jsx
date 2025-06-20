@@ -50,47 +50,46 @@ export default function Header() {
         </nav>
       </header>
 
-      {/* Mobile menu - full-screen with background */}
+      {/* Mobile menu - full-screen com background, sem overflow lateral */}
       <div
-        className={`absolute inset-0 bg-[#5454D4]/95 z-50 flex flex-col items-center justify-center md:hidden transition-transform duration-500 ease-in-out ${
+        className={`fixed top-0 left-0 w-full h-full bg-[#5454D4]/95 z-50 flex flex-col items-center justify-center md:hidden transition-transform duration-500 ease-in-out ${
           menuOpen ? "translate-y-0" : "-translate-y-full"
         }`}
+        style={{ overflowX: "hidden" }}
       >
         {/* Close button */}
         <button
-          className="absolute top-4 right-4 p-2 text-white"
+          className="absolute top-4 right-4 p-2 rounded-full bg-transparent text-white"
           onClick={() => setMenuOpen(false)}
           aria-label="Fechar menu"
         >
           <X size={32} />
         </button>
-
-        {/* Mobile nav */}
-        <nav className="flex flex-col items-center space-y-8 text-2xl">
+        <nav className="flex flex-col items-center space-y-6 mt-12 w-full">
           <Link
             href="#sobre"
-            className="hover:text-cyan-400 transition-colors"
+            className="hover:text-cyan-400 transition-colors text-lg"
             onClick={() => setMenuOpen(false)}
           >
             Sobre
           </Link>
           <Link
             href="#experiencia"
-            className="hover:text-cyan-400 transition-colors"
+            className="hover:text-cyan-400 transition-colors text-lg"
             onClick={() => setMenuOpen(false)}
           >
             Experiência
           </Link>
           <Link
             href="#skills"
-            className="hover:text-cyan-400 transition-colors"
+            className="hover:text-cyan-400 transition-colors text-lg"
             onClick={() => setMenuOpen(false)}
           >
             Skills
           </Link>
           <Link
             href="#projects"
-            className="hover:text-cyan-400 transition-colors"
+            className="hover:text-cyan-400 transition-colors text-lg"
             onClick={() => setMenuOpen(false)}
           >
             Projetos
@@ -100,7 +99,7 @@ export default function Header() {
 
       {/* Dark overlay when menu is open */}
       <div
-        className={`fixed inset-0 bg-black/50 z-40 md:hidden transition-opacity duration-500 ease-in-out ${
+        className={`absolute inset-0 bg-black/50 z-40 md:hidden transition-opacity duration-500 ease-in-out ${
           menuOpen ? "opacity-100" : "opacity-0 pointer-events-none"
         }`}
         onClick={() => setMenuOpen(false)}

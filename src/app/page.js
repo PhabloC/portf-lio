@@ -6,7 +6,7 @@ import Sobre from "@/components/Sobre/Sobre";
 
 export default function Home() {
   return (
-    <div className="  bg-gradient-to-br from-gray-900 via-black to-gray-900">
+    <div className=" overflow-x-hidden bg-gradient-to-br from-gray-900 via-black to-gray-900">
       <PrimarySection />
       <Sobre />
       <Experience />
