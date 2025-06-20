@@ -63,8 +63,8 @@ export default function ExperienceSection() {
               }`}
             >
               <div className="rounded-2xl p-8 bg-white/10 border border-white/20 backdrop-blur-lg hover:border-white/30 transition-all duration-300 hover:shadow-2xl">
-                <div className="flex items-start space-x-6">
-                  <div className="flex-shrink-0 ">
+                <div className="flex flex-col sm:flex-row items-center sm:items-start space-y-4 sm:space-y-0 sm:space-x-6 text-center sm:text-left">
+                  <div className="flex-shrink-0 flex justify-center w-full sm:w-auto mb-4 sm:mb-0">
                     <div>
                       <Image
                         src={exp.logo}
@@ -72,7 +72,7 @@ export default function ExperienceSection() {
                         width={64}
                         height={64}
                         style={{ objectFit: "cover" }}
-                        className="object-contain"
+                        className="object-contain mx-auto"
                         loading="lazy"
                       />
                     </div>
@@ -83,7 +83,7 @@ export default function ExperienceSection() {
                         <h3 className="text-2xl font-bold text-white mb-1">
                           {exp.position}
                         </h3>
-                        <h4 className="text-xl text-gray-300 flex items-center">
+                        <h4 className="text-xl text-gray-300 flex items-center justify-center sm:justify-start">
                           <Building2 size={20} className="mr-2" />
                           {exp.company}
                         </h4>

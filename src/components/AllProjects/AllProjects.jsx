@@ -109,7 +109,7 @@ export default function ProjectsSection() {
       {/* Gradient Overlay */}
       <div className="absolute inset-0 bg-gradient-to-br "></div>
 
-      <div className="relative z-10 max-w-7xl mx-auto">
+      <div className="relative z-10 max-w-7xl mx-auto w-full px-2 sm:px-4 md:px-8">
         <h2
           className={`text-4xl md:text-5xl font-bold text-center mb-16 text-white transform transition-all duration-1000 ${
             isVisible ? "translate-y-0 opacity-100" : "translate-y-20 opacity-0"
