@@ -11,7 +11,7 @@ export default function Header() {
     <div className=" justify-center align-center flex w-full">
       {/* Mobile menu button - only icon, no background */}
       <button
-        className={`fixed top-4 left-4 z-50 md:hidden p-2 ${
+        className={`absolute top-4 left-4 z-50 md:hidden p-2 ${
           menuOpen ? "hidden" : "block"
         }`}
         onClick={() => setMenuOpen(true)}
@@ -52,7 +52,7 @@ export default function Header() {
 
       {/* Mobile menu - full-screen com background, sem overflow lateral */}
       <div
-        className={`fixed top-0 left-0 w-full h-full bg-[#5454D4]/95 z-50 flex flex-col items-center justify-center md:hidden transition-transform duration-500 ease-in-out ${
+        className={`absolute top-0 left-0 w-full h-full bg-[#5454D4]/95 z-50 flex flex-col items-center justify-center md:hidden transition-transform duration-500 ease-in-out ${
           menuOpen ? "translate-y-0" : "-translate-y-full"
         }`}
         style={{ overflowX: "hidden" }}
