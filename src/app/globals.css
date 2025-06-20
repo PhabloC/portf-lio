@@ -225,3 +225,10 @@ html {
   height: 100vh;
   z-index: 1; /* Garante que fique atrás do conteúdo */
 }
+
+@media (max-width: 768px) {
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: none !important;
+  }
+}

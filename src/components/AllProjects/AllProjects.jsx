@@ -149,10 +149,17 @@ export default function ProjectsSection() {
               320: {
                 slidesPerView: 1,
                 spaceBetween: 20,
+                navigation: false,
+              },
+              480: {
+                slidesPerView: 1,
+                spaceBetween: 20,
+                navigation: false,
               },
               768: {
                 slidesPerView: 2,
                 spaceBetween: 25,
+                navigation: false,
               },
               1024: {
                 slidesPerView: 3,
