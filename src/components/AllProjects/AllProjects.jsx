@@ -15,6 +15,8 @@ import { SiVite } from "react-icons/si";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { FaCss3 } from "react-icons/fa";
 import { FaReact } from "react-icons/fa";
+import { RiSupabaseFill } from "react-icons/ri";
+import { RiNextjsFill } from "react-icons/ri";
 
 // Import Swiper styles
 import "swiper/css";
@@ -29,6 +31,8 @@ const techIcons = {
   vite: <SiVite size={22} color="#646cff" title="Vite" />,
   tailwind: <RiTailwindCssFill size={22} color="#38bdf8" title="Tailwind" />,
   css: <FaCss3 size={22} color="#1572B6" title="CSS" />,
+  supabase: <RiSupabaseFill size={22} color="#3ECF8E" title="Supabase" />,
+  next: <RiNextjsFill size={22} color="#000000" title="Next.js" />,
 };
 
 const projects = [
@@ -62,12 +66,12 @@ const projects = [
   },
   {
     id: 4,
-    title: "SASS Oak.io",
+    title: "Distribuidora Carvalho's",
     description: "Dashboard moderno com gráficos e integração API.",
-    tech: ["react", "javascript", "firebase", "vite", "tailwind"],
-    image: "/imagens/oak.png",
-    github: "https://github.com/PhabloC/oak.io",
-    demo: "https://oak-io.vercel.app/",
+    tech: ["react", "javascript", "supabase", "next", "tailwind"],
+    image: "/imagens/distribuidora.png",
+    github: "https://github.com/PhabloC/distribuidora",
+    demo: "https://distribuidora-ivory.vercel.app/",
   },
 ];
 
