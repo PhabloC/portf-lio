@@ -73,6 +73,15 @@ const projects = [
     github: "https://github.com/PhabloC/distribuidora",
     demo: "https://distribuidora-ivory.vercel.app/",
   },
+  {
+    id: 5,
+    title: "EPR Trainee 2025",
+    description: "Programa de Trainee EPR 2025",
+    tech: ["react", "javascript", "next", "tailwind"],
+    image: "/imagens/epr.png",
+    github: "https://github.com/PhabloC/EPR",
+    demo: "https://epr-omega.vercel.app/",
+  },
 ];
 
 export default function ProjectsSection() {
